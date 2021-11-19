@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Stem';
+    src: url('fonts/Stem-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Stem';
+    src: url('fonts/Stem/Stem-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Stem';
+    src: url('fonts/Stem/Stem-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Stem';
+    src: url('fonts/Stem/Stem-SemiLight.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Stem';
+    src: url('fonts/Stem/Stem-ExtraLight.ttf');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Stem';
+    src: url('fonts/Stem/Stem-Thin.ttf');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Stem';
+    src: url('fonts/Stem/Stem-Regular.ttf');
+    font-weight: bold;
+}
+
+
+.authorization-body
+{
+    background-color: #304FFD;
+}
+html
+{
+    height: 100%;
+}
+body
+{
+    height: 100%;
+    background-color: #E9F3F5;
+}
+.container
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.illustration
+{
+    width: 35%;
+}
+.rectangle
+{
+    background-color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    min-width: 300px;
+    width: 35%;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+form
+{
+    display: flex;
+    flex-direction: column;
+}
