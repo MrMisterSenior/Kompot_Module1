@@ -1,75 +1,76 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="ru">
+
+<head>
     <meta charset="utf-8">
     <title>Авторизация</title>
-    <link rel="shortcut icon" href="public/icon.ico"/>
-    <link rel="stylesheet" href="CSS/style.css"/>
-  </head>
-  <body class="authorization-body">
-    <div class="container">
-      <img class="illustration" src="img/Illustration.svg"/>
-      <div class="rectangle">
-        <div class="authorization">
-            
-            <h4>Авторизация</h4>
-            
-            <button class="button-login-google">
-                <div class="container-between">
-                    <img src="img/google-icon.svg" class="google-icon">
-                    <span>Войти через Google</span>
-                    <div></div>
-                </div>
-            </button>
+    <link rel="shortcut icon" href="public/icon.ico" />
+    <link rel="stylesheet" href="CSS/style.css" />
+</head>
 
-            <div class="email-login">
-                <hr>
-                <span>Или через электронную почту</span>
+<body class="authorization-body">
+    <div class="wrapper">
+        <img class="illustration" src="img/Illustration.svg" />
+        <main class="form-container">
+            <div>
+                <h4>Авторизация</h4>
+
+                <button class="button-login-google">
+                    <div class="container-between">
+                        <img src="img/google-icon.svg" class="google-icon">
+                        <span>Войти через Google</span>
+                        <div></div>
+                    </div>
+                </button>
+
+                <div>
+                    <span>Или через электронную почту</span>
+                </div>
+
+                <form class="form-auth">
+                    <span>Email</span>
+                    <input type="email" />
+                    <br>
+                    <span>Пароль</span>
+                    <!-- <div class="form-password"> -->
+                    <input type="password" />
+                    <!-- <img src="img/eye.png" style="width: 20px; height: 20px;">
+                    </div> -->
+                    <br>
+                    <div class="container" style="justify-content: space-between; height: auto;">
+                        <label>
+                            <input type="checkbox">
+                            <span>Запомнить меня</span>
+                        </label>
+
+                        <a class="forget-password-1" href="restore-password.html">
+                            <span>Забыли пароль?</span>
+                        </a>
+                    </div>
+                    <br>
+                    <input type="submit" class="button-login" value="Войти">
+                    <div class="container forget-password-2">
+                        <br>
+                        <br>
+                        <a href="restore-password.html">
+                            <span>Забыли пароль?</span>
+                        </a>
+                    </div>
+                </form>
+
             </div>
 
-            <form class="form-auth">
-                <span>Email</span>
-                <input type="email" />
-                <br>
-                <span>Пароль</span>
-                <!-- <div class="form-password"> -->
-                <input type="password" />
-                <!-- <img src="img/eye.png" style="width: 20px; height: 20px;">
-                </div> -->
-                <br>
-                <div class="container" style="justify-content: space-between; height: auto;">
-                    <label>
-                        <input type="checkbox">
-                        <span>Запомнить меня</span>
-                    </label>
+            <footer>
+                <span>
+                    Ещё нет аккаунта?
+                </span>
 
-                    <a class="forget-password-1" href="restore-password.html">
-                        <span>Забыли пароль?</span>
-                    </a>
-                </div>
-                <br>
-                <input type="submit" class="button-login" value="Войти">
-                <div class="container forget-password-2">
-                <br>
-                <br>
-                    <a href="restore-password.html">
-                        <span>Забыли пароль?</span>
-                    </a>
-                </div>
-            </form>
-
-        </div>
-
-        <footer>
-            <span>
-                Ещё нет аккаунта?
-            </span>
-
-            <a href="registration.html">
-                <span>Зарегистрироваться</span>
-            </a>
-        </footer>
+                <a href="registration.html">
+                    <span>Зарегистрироваться</span>
+                </a>
+            </footer>
+        </main>
     </div>
-    </div>
-  </body>
+</body>
+
 </html>
