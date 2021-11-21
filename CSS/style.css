@@ -42,14 +42,19 @@
 }
 /*#endregion fonts*/
 
-.authorization-body
+.body-authorization
 {
     background-color: #304FFD;
+}
+
+.body-authorization-secondary
+{
+    background-color: #E9F3F5;
 }
 .wrapper
 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
@@ -58,27 +63,34 @@ h4
 {
     font-family: Stem;
     font-weight: 500;
+    font-size: 28px;
+    color: #3F434A;
 }
 span
 {
     font-family: Stem;
     font-weight: 300;
 }
-.illustration
+.img-illustration
 {
     width: 40%;
+}
+.img-lock
+{
+    height: 50%;
+    width:  50%;
 }
 .big-form-container
 {
     background-color: white;
     min-width: 315px;
-    width: 40%;
+    min-height: 85%;
+    width: 45%;
     border-radius: 14px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    padding: 10% 0%;
+    justify-content: center;
 }
 form
 {
