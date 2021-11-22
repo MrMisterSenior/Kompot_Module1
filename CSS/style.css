@@ -2,7 +2,7 @@
 @font-face {
     font-family: 'Stem';
     src: url('fonts/Stem-Light.ttf');
-    font-weight: 300;
+    font-weight: 250;
 }
 
 @font-face {
@@ -41,12 +41,10 @@
     font-weight: bold;
 }
 /*#endregion fonts*/
-
 .body-authorization
 {
     background-color: #304FFD;
 }
-
 .body-authorization-secondary
 {
     background-color: #E9F3F5;
@@ -57,16 +55,17 @@
     justify-content: space-around;
     align-items: center;
     position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
+    top: 0; bottom: 0; left: 0; right: 0;
 }
 h4
 {
+    text-align: center;
     font-family: Stem;
     font-weight: 500;
     font-size: 28px;
     color: #3F434A;
 }
-span
+span, label
 {
     font-family: Stem;
     font-weight: 300;
@@ -79,22 +78,73 @@ span
 {
     height: 50%;
     width:  50%;
+    margin: 10% auto;
 }
 .big-form-container
 {
     background-color: white;
     min-width: 315px;
     min-height: 85%;
-    width: 45%;
+    width: 40%;
     border-radius: 14px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+}
+.big-form-container footer
+{
+    margin: auto auto 30px auto;
 }
 form
 {
-    width: 80%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+.field
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 75%;
+}
+.field input
+{
+    border-radius: 14px;
+    border-color: #E8E9EB;
+    border-style: solid;
+    height: 40px;
+    background-color: white;
+}
+/*#region Кнопка Submit*/
+input[type=submit]
+{
+    width: 75%;
+    border-radius: 14px;
+    height: 40px;
+    background-color: #304FFD;
+    border-color: #304FFD;
+    border-style: solid;
+    color: white;
+    font-family: Stem;
+    font-weight: 300;
+    transition: box-shadow 0.1s ease-in;
+}
+input[type=submit]:hover
+{
+    background-color: #2e64fd;
+    border-color: #2e64fd;
+}
+input[type=submit]:active
+{
+    background-color: #1c3ffd;
+}
+/*#endregion Кнопки Submit*/
+.button-google-login
+{
+    border-radius: 14px;
+    border-color: #E8E9EB;
+    border-style: solid;
+    height: 40px;
+    background-color: white;
 }

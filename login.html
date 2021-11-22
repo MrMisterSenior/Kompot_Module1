@@ -12,50 +12,38 @@
     <div class="wrapper">
         <img class="illustration" src="img/Illustration.svg" />
         <main class="big-form-container">
-            <div>
+            <div class="small-form-container">
                 <h4>Авторизация</h4>
-
-                <button class="button-login-google">
+                <button class="button-google-login">
                     <div class="container-between">
                         <img src="img/google_icon.svg" class="google-icon">
                         <span>Войти через Google</span>
-                        <div></div>
                     </div>
                 </button>
-
                 <div>
                     <span>Или через электронную почту</span>
                 </div>
-
                 <form class="form-auth">
-                    <span>Email</span>
-                    <input type="email" />
-                    <br>
-                    <span>Пароль</span>
-                    <!-- <div class="form-password"> -->
-                    <input type="password" />
-                    <!-- <img src="img/eye.png" style="width: 20px; height: 20px;">
-                    </div> -->
-                    <br>
+                    <div class="field">
+                        <label>Email</label>
+                        <input type="email"/>
+                    </div>
+                    <div class="field">
+                        <label>Пароль</label>
+                        <input type="password"/>
+                    </div>
                     <div class="container" style="justify-content: space-between; height: auto;">
                         <label>
                             <input type="checkbox">
                             <span>Запомнить меня</span>
                         </label>
 
-                        <a class="forget-password-1" href="restore-password.html">
+                        <a class="forgot-password" href="forgot-password.html">
                             <span>Забыли пароль?</span>
                         </a>
                     </div>
                     <br>
                     <input type="submit" class="button-login" value="Войти">
-                    <div class="container forget-password-2">
-                        <br>
-                        <br>
-                        <a href="restore-password.html">
-                            <span>Забыли пароль?</span>
-                        </a>
-                    </div>
                 </form>
 
             </div>
