@@ -87,7 +87,7 @@ span, label
     min-width: 315px;
     min-height: 85%;
     width: 40%;
-    border-radius: 14px;
+    border-radius: 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,9 +110,7 @@ form
 {
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    width: 80%;
+    width: 70%;
 }
 .field input
 {
@@ -121,16 +119,18 @@ form
     border-style: solid;
     height: 40px;
     background-color: white;
+    margin: 5% 0px 5% 0px;
 }
 .form-help-container
 {
-    width: 80%;
+    width: 70%;
+    display: flex;
     justify-content: space-between;
 }
 /*#region Кнопка Submit*/
 input[type=submit]
 {
-    width: 75%;
+    width: 70%;
     border-radius: 14px;
     height: 40px;
     background-color: #304FFD;
@@ -140,6 +140,7 @@ input[type=submit]
     font-family: Stem;
     font-weight: 300;
     transition: box-shadow 0.1s ease-in;
+    margin: 5px 0px 5px 0px;
 }
 input[type=submit]:hover
 {
@@ -151,6 +152,31 @@ input[type=submit]:active
     background-color: #1c3ffd;
 }
 /*#endregion Кнопки Submit*/
+/*#region Кнопка Google*/
+.button-google-login
+{
+    width: 70%;
+    border-radius: 14px;
+    height: 40px;
+    background-color: #304FFD;
+    border-color: #304FFD;
+    border-style: solid;
+    color: white;
+    font-family: Stem;
+    font-weight: 300;
+    transition: box-shadow 0.1s ease-in;
+    margin: 5px 0px 5px 0px;
+}
+.button-google-login:hover
+{
+    background-color: #2e64fd;
+    border-color: #2e64fd;
+}
+.button-google-login:active
+{
+    background-color: #1c3ffd;
+}
+/*#endregion Кнопка Google*/
 .button-google-login
 {
     border-radius: 14px;
@@ -158,4 +184,18 @@ input[type=submit]:active
     border-style: solid;
     height: 40px;
     background-color: white;
+}
+.or-using-email-line
+{
+    width: 70%; 
+    text-align: center; 
+    border-bottom: 1px solid #E8E9EB; 
+    line-height: 0.1em;
+    margin: 5% auto; 
+}
+.or-using-email-line span
+{
+    background-color: white;
+    font-weight: 300;
+    color: #8A9099;
 }
