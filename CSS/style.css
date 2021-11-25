@@ -1,46 +1,42 @@
-/*#region Подключение шрифтов*/
+/*#region Шрифт Roboto*/
 @font-face {
-    font-family: 'Stem';
-    src: url('fonts/Stem-Light.ttf');
-    font-weight: 250;
-}
-
-@font-face {
-    font-family: 'Stem';
-    src: url('fonts/Stem/Stem-Medium.ttf');
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: 'Stem';
-    src: url('fonts/Stem/Stem-Bold.ttf');
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: 'Stem';
-    src: url('fonts/Stem/Stem-SemiLight.ttf');
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: 'Stem';
-    src: url('fonts/Stem/Stem-ExtraLight.ttf');
-    font-weight: 200;
-}
-
-@font-face {
-    font-family: 'Stem';
-    src: url('fonts/Stem/Stem-Thin.ttf');
+    font-family: Roboto;
+    src: url('fonts/Roboto/Roboto-Thin.ttf');
     font-weight: 100;
 }
-
 @font-face {
-    font-family: 'Stem';
-    src: url('fonts/Stem/Stem-Regular.ttf');
-    font-weight: bold;
+    font-family: Roboto;
+    src: url('fonts/Roboto/Roboto-Light.ttf');
+    font-weight: 300;
 }
-/*#endregion fonts*/
+@font-face {
+    font-family: Roboto;
+    src: url('fonts/Roboto/Roboto-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: Roboto;
+    src: url('fonts/Roboto/Roboto-Medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: Roboto;
+    src: url('fonts/Roboto/Roboto-Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: Roboto;
+    src: url('fonts/Roboto-Black.ttf');
+    font-weight: 900;
+}
+/*#endregion Шрифт Roboto*/
+/*#region Шрифт Poppins*/
+@font-face {
+    font-family: Poppins;
+    src: url('fonts/Poppins/Poppins-Medium.ttf');
+    font-weight: 500;
+}
+/*#endregion Шрифт Poppins*/
 .body-authorization
 {
     background-color: #304FFD;
@@ -57,17 +53,26 @@
     position: absolute;
     top: 0; bottom: 0; left: 0; right: 0;
 }
+a
+{
+    text-decoration: none;
+    color: #304FFD;
+}
+a:active
+{
+    color: #304FFD;
+}
 h4
 {
     text-align: center;
-    font-family: Stem;
+    font-family: Roboto;
     font-weight: 500;
     font-size: 28px;
     color: #3F434A;
 }
-span, label
+label, span
 {
-    font-family: Stem;
+    font-family: Roboto;
     font-weight: 300;
 }
 .img-illustration
@@ -86,19 +91,16 @@ span, label
     background-color: white;
     min-width: 315px;
     min-height: 85%;
-    width: 40%;
+    width: 600px;
     border-radius: 24px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    position: relative;
+    justify-content: space-between;
 }
 .big-form-container footer
 {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
     text-align: center;
+    margin-bottom: 27px;
 }
 form
 {
@@ -110,7 +112,10 @@ form
 {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    justify-content: space-between;
+    height: 70px;
+    width: 400px;
+    margin: 30px 0 0 0;
 }
 .field input
 {
@@ -119,10 +124,15 @@ form
     border-style: solid;
     height: 40px;
     background-color: white;
-    margin: 5% 0px 5% 0px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    color: #3F434A;
+    padding-left: 16px;
 }
 .form-help-container
 {
+    margin: 25px 0;
     width: 70%;
     display: flex;
     justify-content: space-between;
@@ -137,10 +147,11 @@ input[type=submit]
     border-color: #304FFD;
     border-style: solid;
     color: white;
-    font-family: Stem;
-    font-weight: 300;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 15px;
     transition: box-shadow 0.1s ease-in;
-    margin: 5px 0px 5px 0px;
+    margin: 0px 0px 35px 0px;
 }
 input[type=submit]:hover
 {
@@ -151,44 +162,49 @@ input[type=submit]:active
 {
     background-color: #1c3ffd;
 }
-/*#endregion Кнопки Submit*/
+/*#endregion Кнопка Submit*/
+
 /*#region Кнопка Google*/
 .button-google-login
 {
-    width: 70%;
-    border-radius: 14px;
     height: 40px;
-    background-color: #304FFD;
-    border-color: #304FFD;
+    width: 400px;
+    background-color: white;
+    border-color: #E8E9EB;
+    border-radius: 14px;
     border-style: solid;
-    color: white;
-    font-family: Stem;
-    font-weight: 300;
-    transition: box-shadow 0.1s ease-in;
-    margin: 5px 0px 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .button-google-login:hover
 {
-    background-color: #2e64fd;
-    border-color: #2e64fd;
+    background-color: #ededed;
 }
 .button-google-login:active
 {
-    background-color: #1c3ffd;
+    background-color: #e0e0e0;
+}
+.button-google-login span
+{
+    font-family: Segoe UI;
+    font-size: 14px;
+    font-weight: 400;
 }
 /*#endregion Кнопка Google*/
-.button-google-login
+
+input[type=checkbox]
 {
-    border-radius: 14px;
-    border-color: #E8E9EB;
-    border-style: solid;
-    height: 40px;
-    background-color: white;
+    accent-color: #304FFD;
 }
+
 .or-using-email-line
 {
     width: 70%; 
-    text-align: center; 
+    text-align: center;
     border-bottom: 1px solid #E8E9EB; 
     line-height: 0.1em;
     margin: 5% auto; 
@@ -196,6 +212,8 @@ input[type=submit]:active
 .or-using-email-line span
 {
     background-color: white;
-    font-weight: 300;
+    font-family: Segoe UI;
+    font-weight: 400;
+    font-size: 12px;
     color: #8A9099;
 }
