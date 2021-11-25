@@ -30,13 +30,6 @@
     font-weight: 900;
 }
 /*#endregion Шрифт Roboto*/
-/*#region Шрифт Poppins*/
-@font-face {
-    font-family: Poppins;
-    src: url('fonts/Poppins/Poppins-Medium.ttf');
-    font-weight: 500;
-}
-/*#endregion Шрифт Poppins*/
 .body-authorization
 {
     background-color: #304FFD;
