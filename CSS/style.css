@@ -41,20 +41,26 @@
 .wrapper
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     position: absolute;
     top: 0; bottom: 0; left: 0; right: 0;
 }
+/*#region Ссылки*/
 a
 {
     text-decoration: none;
     color: #304FFD;
 }
+a:hover
+{
+    color: #3b92bb;
+}
 a:active
 {
-    color: #304FFD;
+    color: #0000bb;
 }
+/*#endregion Ссылки*/
 h4
 {
     text-align: center;
@@ -63,15 +69,10 @@ h4
     font-size: 28px;
     color: #3F434A;
 }
-label, span
-{
-    font-family: Roboto;
-    font-weight: 300;
-}
 .img-illustration
 {
-    height: 40%;
-    width: 40%;
+    height: 58%;
+    width: 41%;
 }
 .img-lock
 {
@@ -82,18 +83,19 @@ label, span
 {
     background-color: white;
     width: 600px;
-    height: auto;
+    height: 86.3%;
     border-radius: 24px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 27px;
 }
-/* Комментарий для работы там, где я его увижу: либо большая бубыдла 85%, но это не выход, тогда едет везде; либо авто, но не работает див-филлер. Обсудить с Максом */
 .big-form-container footer
 {
     text-align: center;
+    font-family: Roboto;
     font-size: 14px;
+    color: #8A9099;
 }
 form
 {
@@ -101,14 +103,15 @@ form
     flex-direction: column;
     align-items: center;
 }
+
+/*#region Поле ввода*/
 .field
 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 70px;
     width: 400px;
-    margin: 30px 0 0 0;
+    margin: 0 0 30px 0;
 }
 .field input
 {
@@ -123,13 +126,37 @@ form
     color: #3F434A;
     padding-left: 16px;
 }
+.field label
+{
+    font-family: Roboto;
+    font-size: 14px;
+    color: #8A9099;
+}
+/*#endregion Поле ввода*/
+
+/*#region Запомнить меня + забыли пароль*/
 .form-help-container
 {
     margin: 25px 0;
+    height: 18px;
+    line-height: 18px;
     width: 70%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    font-family: Roboto;
     font-size: 14px;
+    color: #595F69;
+}
+.form-help-container label
+{
+    cursor: pointer;
+}
+/*#endregion Запомнить меня + забыли пароль*/
+input[type=checkbox]
+{
+    accent-color: #304FFD;
+    cursor: pointer;
 }
 /*#region Кнопка Submit*/
 input[type=submit]
@@ -146,6 +173,7 @@ input[type=submit]
     font-size: 15px;
     transition: box-shadow 0.1s ease-in;
     margin: 0px 0px 35px 0px;
+    cursor: pointer;
 }
 input[type=submit]:hover
 {
@@ -173,6 +201,7 @@ input[type=submit]:active
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    cursor: pointer;
 }
 .button-google-login:hover
 {
@@ -184,24 +213,26 @@ input[type=submit]:active
 }
 .button-google-login span
 {
+    color: #595F69;
     font-family: Segoe UI;
     font-size: 14px;
     font-weight: 400;
 }
+.button-google-login img, p
+{
+    width: 16px;
+    height: 16px;
+}
 /*#endregion Кнопка Google*/
 
-input[type=checkbox]
-{
-    accent-color: #304FFD;
-}
-
+/*#region Или через электронную почту*/
 .or-using-email-line
 {
-    width: 70%; 
+    width: 400px; 
     text-align: center;
     border-bottom: 1px solid #E8E9EB; 
     line-height: 0.1em;
-    margin: 5% auto; 
+    margin: 30px auto; 
 }
 .or-using-email-line span
 {
@@ -211,3 +242,5 @@ input[type=checkbox]
     font-size: 12px;
     color: #8A9099;
 }
+/*#endregion Или через электронную почту*/
+
