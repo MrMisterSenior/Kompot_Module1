@@ -10,42 +10,54 @@
 
 <body class="body-authorization-secondary">
   <div class="wrapper">
-    <main class="big-form-container">
+    <main class="big-form-container-2">
+      <div style="height: 50px;"></div>
+      <div class="small-form-container">
+        <h4>Регистрация</h4>
+        <button class="button-google-login">
+          <img src="img/google_icon.svg" class="google-icon">
+          <span>Войти через Google</span>
+          <p></p>
+        </button>
+        <div class="or-using-email-line">
+          <span>ИЛИ ЧЕРЕЗ ЭЛЕКТРОННУЮ ПОЧТУ</span>
+        </div>
+        <form>
+          <div class="field">
+            <label for="tb_FIO">ФИО</label>
+            <input id="tb_FIO"/>
+          </div>
+          <div class="field">
+            <label for="tb_email">Email</label>
+            <input type="email" id="tb_email" />
+          </div>
+          <div class="field">
+            <label for="tb_password">Пароль</label>
+            <input type="password" id="tb_password"/>
+          </div>
+          <div class="field">
+            <label for="tb_password-confirm">Подтверждение пароля</label>
+            <input type="password" id="tb_password-confirm"/>
+          </div>
+          <label class="label-accept-politics">
+            <input type="checkbox" class="custom-checkbox">
+            <span>
+              Принимаю условия <a href="#">Политики конфиденциальности</a>
+            </span>
+          </label>
+          <input type="submit" value="Войти">
+        </form>
+      </div>
+      <footer>
+        <span>
+            Уже есть аккаунт?
+        </span>
 
-      <h4>Регистрация</h4>
-
-      <form class="form-auth">
-        <span>ФИО</span>
-        <input type="text" />
-        <br>
-        <span>Email</span>
-        <input type="email" />
-        <br>
-        <span>Пароль</span>
-        <input type="password" />
-        <br>
-        <span>Подтверждение пароля</span>
-        <input type="password" />
-        <br>
-        <label>
-          <input type="checkbox">
-          <span>
-            <div>
-              <span>
-                Принимаю условия
-              </span>
-
-              <a href="#">
-                <span>
-                  Политики конфиденциальности
-                </span>
-              </a>
-            </div>
-          </span>
-        </label>
-      </form>
-      <input type="submit" class="button-reg" value="Зарегистрироваться">
-      </main>
+        <a href="login.html">
+            <span>Войти</span>
+        </a>
+    </footer>
+    </main>
   </div>
 </body>
 

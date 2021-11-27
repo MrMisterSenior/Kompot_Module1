@@ -116,6 +116,7 @@ h4
     font-family: Roboto;
     font-size: 14px;
     color: #8A9099;
+    margin: 80px auto auto auto;
 }
 form
 {
@@ -145,6 +146,7 @@ form
     font-weight: 400;
     color: #3F434A;
     padding-left: 16px;
+    margin-top: 9px;
 }
 .field label
 {
@@ -153,20 +155,25 @@ form
     color: #8A9099;
 }
 /*#endregion Поле ввода*/
-
+input[type=password]
+{
+    font-family: Segoe UI;
+    font-size: 30px;
+    letter-spacing: 0.03em
+}
 /*#region Запомнить меня + забыли пароль*/
 .form-help-container
 {
-    margin: 25px 0;
-    height: 18px;
     line-height: 18px;
-    width: 70%;
+    height: 18px;
+    width: 400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: Roboto;
     font-size: 14px;
     color: #595F69;
+    margin: 0 auto 25px auto;
 }
 .form-help-container label
 {
@@ -192,7 +199,6 @@ input[type=submit]
     font-weight: 400;
     font-size: 15px;
     transition: box-shadow 0.1s ease-in;
-    margin: 0px 0px 35px 0px;
     cursor: pointer;
 }
 input[type=submit]:hover
@@ -264,3 +270,11 @@ input[type=submit]:active
 }
 /*#endregion Или через электронную почту*/
 
+.label-accept-politics
+{
+    width: 400px;
+    margin: auto auto 25px auto;
+    font-family: Roboto;
+    font-size: 14px;
+    color: #595F69;
+}
