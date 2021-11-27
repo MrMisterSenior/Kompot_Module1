@@ -78,6 +78,8 @@ h4
 {
     height: 220px;
     width:  220px;
+    display: block;
+    margin: 80px auto 0px auto;
 }
 .big-form-container
 {
@@ -90,7 +92,25 @@ h4
     justify-content: space-between;
     padding-bottom: 27px;
 }
+.big-form-container-2
+{
+    background-color: white;
+    width: 600px;
+    height: auto;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 27px;
+}
 .big-form-container footer
+{
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    color: #8A9099;
+}
+.big-form-container-2 footer
 {
     text-align: center;
     font-family: Roboto;
@@ -161,9 +181,9 @@ input[type=checkbox]
 /*#region Кнопка Submit*/
 input[type=submit]
 {
-    width: 70%;
-    border-radius: 14px;
+    width: 400px;
     height: 40px;
+    border-radius: 14px;
     background-color: #304FFD;
     border-color: #304FFD;
     border-style: solid;
