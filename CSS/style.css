@@ -43,8 +43,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 0; bottom: 0; left: 0; right: 0;
+    height: 97vh;
 }
 /*#region Ссылки*/
 a
@@ -159,7 +158,8 @@ input[type=password]
 {
     font-family: Segoe UI;
     font-size: 30px;
-    letter-spacing: 0.03em
+    letter-spacing: 0.03em;
+    width: 400px;
 }
 /*#region Запомнить меня + забыли пароль*/
 .form-help-container
@@ -200,6 +200,7 @@ input[type=submit]
     font-size: 15px;
     transition: box-shadow 0.1s ease-in;
     cursor: pointer;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 input[type=submit]:hover
 {
@@ -277,4 +278,18 @@ input[type=submit]:active
     font-family: Roboto;
     font-size: 14px;
     color: #595F69;
+    cursor: pointer;
+}
+.div-password
+{
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.a-toggle-password
+{
+    cursor: pointer;
+    position: absolute;
+    top: 23px;
+    right: 15px;
 }

@@ -25,22 +25,32 @@
         <form>
           <div class="field">
             <label for="tb_FIO">ФИО</label>
-            <input id="tb_FIO"/>
+            <input id="tb_FIO" required/>
           </div>
           <div class="field">
             <label for="tb_email">Email</label>
-            <input type="email" id="tb_email" />
+            <input type="email" id="tb_email" required/>
           </div>
           <div class="field">
             <label for="tb_password">Пароль</label>
-            <input type="password" id="tb_password"/>
+            <div class="div-password">
+              <input type="password" id="tb_password" required>
+              <a class="a-toggle-password">
+                <img src="img/Eye_Closed.svg"/>
+              </a>
+            </div>
           </div>
           <div class="field">
             <label for="tb_password-confirm">Подтверждение пароля</label>
-            <input type="password" id="tb_password-confirm"/>
+            <div class="div-password">
+              <input type="password" id="tb_password-confirm" required>
+              <a class="a-toggle-password">
+                <img src="img/Eye_Closed.svg"/>
+              </a>
+            </div>
           </div>
           <label class="label-accept-politics">
-            <input type="checkbox" class="custom-checkbox">
+            <input type="checkbox" class="custom-checkbox" required>
             <span>
               Принимаю условия <a href="#">Политики конфиденциальности</a>
             </span>
