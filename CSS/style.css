@@ -146,6 +146,7 @@ form
     color: #3F434A;
     padding-left: 16px;
     margin-top: 9px;
+    outline: none;
 }
 .field label
 {
